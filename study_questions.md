@@ -39,12 +39,13 @@
 37. Which component in Hive is responsible for managing the metadata of the tables?
 38. Which component in Hive is responsible for the data and calculations?
 39. What is the difference between managed and external tables in Hive?
-40. What is the messaging paradigm in tools like kafka? Hint: answer can be in the form of (one-word)
-41. Name and describe the three main components found in Kafka.
-42. What is the difference between a source and sink in a streaming processing system?
-43. What is the difference between stream and batch processing?
-44. Name and describe the three types of processing semantics.
-45. What is the difference between event time and processing time?
-46. What role does the trigger play in Spark Structured streaming?
-47. Name and understand the difference between the two types of windows discussed during the lectures.
-48. What role does the watermark play in Spark Structured Streaming? Hint: It may be helpful to define the watermark by the problem it is trying to solve.
+40. What does it mean to partition a table in a tool like Hive?
+41. What is the messaging paradigm in tools like kafka? Hint: answer can be in the form of (one-word)
+42. Name and describe the three main components found in Kafka.
+43. What is the difference between a source and sink in a streaming processing system?
+44. What is the difference between stream and batch processing?
+45. Name and describe the three types of processing semantics.
+46. What is the difference between event time and processing time?
+47. What role does the trigger play in Spark Structured streaming?
+48. Name and understand the difference between the two types of windows discussed during the lectures.
+49. What role does the watermark play in Spark Structured Streaming? Hint: It may be helpful to define the watermark by the problem it is trying to solve.
