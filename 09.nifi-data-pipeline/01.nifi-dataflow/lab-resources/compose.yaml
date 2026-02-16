@@ -10,7 +10,6 @@ services:
       SINGLE_USER_CREDENTIALS_PASSWORD: <nifi-password>
     networks:
       - lab-nifi-net
-      - lab-kafka-net
 
   nifi-registry:
     image: "apache/nifi-registry:1.26.0"
@@ -26,32 +25,7 @@ services:
       - NIFI_REGISTRY_FLOW_PROVIDER=file
       - NIFI_REGISTRY_FLOW_STORAGE_DIR=/opt/nifi-registry/flow_storage
 
-  db:
-    image: postgres:16
-    container_name: lab-postgres
-    restart: always
-    shm_size: 128mb
-    networks:
-      - lab-nifi-net
-    ports:
-      - 5432:5432
-    environment:
-      - POSTGRES_USER=<postgres-username>
-      - POSTGRES_PASSWORD=<postgres-password>
-      - POSTGRES_DB=<db-name>
-  
-  adminer:
-    container_name: adminer-postgres
-    image: lab-adminer
-    restart: always
-    networks:
-      - lab-nifi-net
-    ports:
-      - 8080:8080
-
 networks:
-  dsti-nifi-net:
+  lab-nifi-net:
     name: lab-nifi-net
     driver: bridge
-  dsti-kafka-net:
-    external: true
